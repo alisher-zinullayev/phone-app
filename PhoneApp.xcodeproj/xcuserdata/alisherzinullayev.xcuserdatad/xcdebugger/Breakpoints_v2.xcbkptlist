@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "56D7B32F-9171-4D9E-ACB8-DCB0A0915806"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "82DFC3E1-BF67-420A-886F-4B7EC6E8C1E1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PhoneApp/ProductsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "ProductsViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "82DFC3E1-BF67-420A-886F-4B7EC6E8C1E1 - cc901ae97a96401e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PhoneApp.ProductsViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; PhoneApp.ProductsViewController"
+                  moduleName = "PhoneApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alisherzinullayev/Desktop/ios%20learning/PhoneApp/PhoneApp/ProductsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "82DFC3E1-BF67-420A-886F-4B7EC6E8C1E1 - 6d4d3c76bb73dcd4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PhoneApp.ProductsViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; PhoneApp.ProductsViewController"
+                  moduleName = "PhoneApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alisherzinullayev/Desktop/ios%20learning/PhoneApp/PhoneApp/ProductsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "82DFC3E1-BF67-420A-886F-4B7EC6E8C1E1 - 4012d4f98760fac9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PhoneApp.ProductsViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;PhoneApp.ProductsViewController&gt;"
+                  moduleName = "PhoneApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alisherzinullayev/Desktop/ios%20learning/PhoneApp/PhoneApp/ProductsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "82DFC3E1-BF67-420A-886F-4B7EC6E8C1E1 - 43625a034953d5cf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PhoneApp.ProductsViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;PhoneApp.ProductsViewController&gt;"
+                  moduleName = "PhoneApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alisherzinullayev/Desktop/ios%20learning/PhoneApp/PhoneApp/ProductsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "82DFC3E1-BF67-420A-886F-4B7EC6E8C1E1 - b1b7f629ef78a951"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PhoneApp.ProductsViewController.__deallocating_deinit"
+                  moduleName = "PhoneApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alisherzinullayev/Desktop/ios%20learning/PhoneApp/PhoneApp/ProductsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "0">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

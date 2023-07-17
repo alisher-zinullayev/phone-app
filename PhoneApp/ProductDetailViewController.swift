@@ -9,7 +9,7 @@ import UIKit
 
 final class ProductDetailViewController: UIViewController {
     
-    var productTitle: UILabel = {
+    let productTitle: UILabel = {
         let label = UILabel()
         label.textColor = .black
         label.font = UIFont.boldSystemFont(ofSize: 30)
@@ -17,7 +17,7 @@ final class ProductDetailViewController: UIViewController {
         return label
     }()
     
-    var productImage: UIImageView = {
+    let productImage: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true

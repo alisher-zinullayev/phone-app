@@ -101,25 +101,39 @@ final class AboutUsViewController: UIViewController {
     
     private func setupViews() {
         contentView.addSubview(mainImage)
-        mainImage.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
-        mainImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
-        mainImage.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
         contentView.addSubview(aboutUs)
-        aboutUs.centerXAnchor.constraint(equalTo: contentView.centerXAnchor, constant: 0).isActive = true
-        aboutUs.topAnchor.constraint(equalTo: mainImage.bottomAnchor).isActive = true
         contentView.addSubview(firstText)
-        firstText.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
-        firstText.topAnchor.constraint(equalTo: aboutUs.bottomAnchor, constant: 50).isActive = true
-        firstText.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 3/5).isActive = true
         contentView.addSubview(secondText)
-        secondText.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
-        secondText.topAnchor.constraint(equalTo: firstText.bottomAnchor, constant: 40).isActive = true
-        secondText.leadingAnchor.constraint(equalTo: firstText.leadingAnchor).isActive = true
         contentView.addSubview(contactsLabel)
-        contactsLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
-        contactsLabel.topAnchor.constraint(equalTo: secondText.bottomAnchor, constant: 40).isActive = true
+        let mainImageConstraints = [
+            mainImage.topAnchor.constraint(equalTo: contentView.topAnchor),
+            mainImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            mainImage.trailingAnchor.constraint(equalTo: contentView.trailingAnchor)
+        ]
+        let aboutUsConstraints = [
+            aboutUs.centerXAnchor.constraint(equalTo: contentView.centerXAnchor, constant: 0),
+            aboutUs.topAnchor.constraint(equalTo: mainImage.bottomAnchor)
+        ]
+        let firstTextConstraints = [
+            firstText.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+            firstText.topAnchor.constraint(equalTo: aboutUs.bottomAnchor, constant: 50),
+            firstText.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 3/5)
+        ]
+        let secondTextConstraints = [
+            secondText.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+            secondText.topAnchor.constraint(equalTo: firstText.bottomAnchor, constant: 40),
+            secondText.leadingAnchor.constraint(equalTo: firstText.leadingAnchor)
+        ]
+        let contactsLabelConstraints = [
+            contactsLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+            contactsLabel.topAnchor.constraint(equalTo: secondText.bottomAnchor, constant: 40)
+        ]
+        NSLayoutConstraint.activate(mainImageConstraints)
+        NSLayoutConstraint.activate(aboutUsConstraints)
+        NSLayoutConstraint.activate(firstTextConstraints)
+        NSLayoutConstraint.activate(secondTextConstraints)
+        NSLayoutConstraint.activate(contactsLabelConstraints)
     }
-    
     
     private func setupContactsStackView() {
         let contactsStackView = UIStackView()

@@ -7,13 +7,13 @@
 
 import UIKit
 
-class AboutUsViewController: UIViewController {
+final class AboutUsViewController: UIViewController {
     
-    let scrollView = UIScrollView()
-    let contentView = UIView()
+    private let scrollView = UIScrollView()
+    private let contentView = UIView()
     
-    let contactSymbols = ["envelope.circle.fill", "phone.circle.fill", "cursorarrow.square.fill"]
-    let contactDetails = ["good-as-old@example.com", "412-888-9028", "www.example.com"]
+    private let contactSymbols = ["envelope.circle.fill", "phone.circle.fill", "cursorarrow.square.fill"]
+    private let contactDetails = ["good-as-old@example.com", "412-888-9028", "www.example.com"]
     
     private let mainImage: UIImageView = {
         let imageView = UIImageView()
@@ -35,7 +35,7 @@ class AboutUsViewController: UIViewController {
         return label
     }()
     
-    let firstText: UILabel = {
+    private let firstText: UILabel = {
         let label = UILabel()
         label.text = "Good as Old Phones returns the phones of yesteryear back to their original glory and then gets them into the hands* of those who appreciate them most: \n \n \nWhether you are looking for a turn-of-the-century wall set or a Zack Morris Special, we've got you covered. Give us a ring, and we will get you connected"
         label.font = label.font.withSize(14)
@@ -46,7 +46,7 @@ class AboutUsViewController: UIViewController {
         return label
     }()
     
-    let secondText: UILabel = {
+    private let secondText: UILabel = {
         let label = UILabel()
         label.text = "*Hands-free phones available"
         label.font = UIFont.italicSystemFont(ofSize: 12)
@@ -57,7 +57,7 @@ class AboutUsViewController: UIViewController {
         return label
     }()
     
-    let contactsLabel: UILabel = {
+    private let contactsLabel: UILabel = {
         let label = UILabel()
         label.text = "Contact"
         label.font = UIFont.boldSystemFont(ofSize: 24)
@@ -82,7 +82,7 @@ class AboutUsViewController: UIViewController {
         setupContactsStackView()
     }
     
-    func setupScrollView(){
+    private func setupScrollView(){
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         contentView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(scrollView)
@@ -99,7 +99,7 @@ class AboutUsViewController: UIViewController {
         contentView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
     }
     
-    func setupViews() {
+    private func setupViews() {
         contentView.addSubview(mainImage)
         mainImage.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
         mainImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
@@ -121,7 +121,7 @@ class AboutUsViewController: UIViewController {
     }
     
     
-    func setupContactsStackView() {
+    private func setupContactsStackView() {
         let contactsStackView = UIStackView()
         contactsStackView.axis = .vertical
         contactsStackView.spacing = 16

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProductDetailViewController: UIViewController {
+final class ProductDetailViewController: UIViewController {
     
     var productTitle: UILabel = {
         let label = UILabel()
@@ -15,6 +15,14 @@ class ProductDetailViewController: UIViewController {
         label.font = UIFont.boldSystemFont(ofSize: 30)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
+    }()
+    
+    var productImage: UIImageView = {
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
     }()
 
     private let addButton: UIButton = {
@@ -32,14 +40,6 @@ class ProductDetailViewController: UIViewController {
         return button
     }()
 
-    var productImage: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
-        imageView.clipsToBounds = true
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        return imageView
-    }()
-
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -53,7 +53,7 @@ class ProductDetailViewController: UIViewController {
         super.viewDidLayoutSubviews()
     }
 
-    func applyConstraints() {
+    private func applyConstraints() {
         let productTitleConstraints = [
             productTitle.topAnchor.constraint(equalTo: view.topAnchor, constant: 110),
             productTitle.centerXAnchor.constraint(equalTo: view.centerXAnchor),

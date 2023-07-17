@@ -7,9 +7,10 @@
 
 import UIKit
 
-class ProductsTableViewCell: UITableViewCell {
+final class ProductsTableViewCell: UITableViewCell {
 
-    static let identifier = "ProductsTableViewCell"
+//    static let identifier = "ProductsTableViewCell"
+    static let identifier = String(describing: ProductsTableViewCell.self)
     
     private let productTitle: UILabel = {
         let label = UILabel()
@@ -17,7 +18,7 @@ class ProductsTableViewCell: UITableViewCell {
         return label
     }()
     
-    private var productImage: UIImageView = {
+    private let productImage: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
         imageView.layer.cornerRadius = 45
@@ -30,7 +31,7 @@ class ProductsTableViewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         contentView.addSubview(productImage)
         contentView.addSubview(productTitle)
-        applyConstraints()
+        setupUI()
         
     }
     
@@ -38,7 +39,7 @@ class ProductsTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func applyConstraints() {
+    private func setupUI() {
         let productImageConstraints = [
             productImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
             productImage.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),

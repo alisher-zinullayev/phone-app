@@ -7,11 +7,11 @@
 
 import UIKit
 
-class ProductsViewController: UIViewController {
+final class ProductsViewController: UIViewController {
     
     
-    let productNames: [String] = ["1907 Wall Set", "1921 Dial Phone", "1937 Desk Set", "1984 Moto Portable"]
-    let productImageNames: [String] = ["image1", "image2", "image3","image4"]
+    private let productNames: [String] = ["1907 Wall Set", "1921 Dial Phone", "1937 Desk Set", "1984 Moto Portable"]
+    private let productImageNames: [String] = ["image1", "image2", "image3","image4"]
     
     
     private let productsTableView: UITableView = {
